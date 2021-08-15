@@ -24,9 +24,11 @@ class ViewController: UIViewController {
         countingLabel.frame = view.frame                                //need a frame to make it show
         
         //creating a CADisplayLink
-        let displayLink = CADisplayLink(target: self, selector: #selector(handleUpdate))
-        displayLink.add(to: .main, forMode: .default)
+        displayLink = CADisplayLink(target: self, selector: #selector(handleUpdate))
+        displayLink?.add(to: .main, forMode: .default)
     }
+    
+    var displayLink: CADisplayLink?
     
     var startValue: Double = 500
     let endValue: Double = 1000
