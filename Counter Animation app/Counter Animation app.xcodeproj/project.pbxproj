@@ -13,6 +13,8 @@
 		045A6F2226C8F3BE00887E14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045A6F2026C8F3BE00887E14 /* Main.storyboard */; };
 		045A6F2426C8F3C000887E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045A6F2326C8F3C000887E14 /* Assets.xcassets */; };
 		045A6F2726C8F3C000887E14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045A6F2526C8F3C000887E14 /* LaunchScreen.storyboard */; };
+		045A6F2F26C90CB800887E14 /* CountingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A6F2E26C90CB800887E14 /* CountingLabel.swift */; };
+		045A6F3126C933D600887E14 /* StatsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045A6F3026C933D600887E14 /* StatsStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		045A6F2326C8F3C000887E14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045A6F2626C8F3C000887E14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		045A6F2826C8F3C000887E14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045A6F2E26C90CB800887E14 /* CountingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingLabel.swift; sourceTree = "<group>"; };
+		045A6F3026C933D600887E14 /* StatsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		045A6F1926C8F3BE00887E14 /* Counter Animation app */ = {
 			isa = PBXGroup;
 			children = (
-				045A6F1A26C8F3BE00887E14 /* AppDelegate.swift */,
-				045A6F1C26C8F3BE00887E14 /* SceneDelegate.swift */,
-				045A6F1E26C8F3BE00887E14 /* ViewController.swift */,
-				045A6F2026C8F3BE00887E14 /* Main.storyboard */,
+				045A6F3326C9562900887E14 /* Delegates */,
+				045A6F3226C9560C00887E14 /* View Controllers */,
+				045A6F3426C9567C00887E14 /* Storyboards */,
 				045A6F2326C8F3C000887E14 /* Assets.xcassets */,
-				045A6F2526C8F3C000887E14 /* LaunchScreen.storyboard */,
 				045A6F2826C8F3C000887E14 /* Info.plist */,
 			);
 			path = "Counter Animation app";
+			sourceTree = "<group>";
+		};
+		045A6F3226C9560C00887E14 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				045A6F2E26C90CB800887E14 /* CountingLabel.swift */,
+				045A6F1E26C8F3BE00887E14 /* ViewController.swift */,
+				045A6F3026C933D600887E14 /* StatsStackView.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		045A6F3326C9562900887E14 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				045A6F1A26C8F3BE00887E14 /* AppDelegate.swift */,
+				045A6F1C26C8F3BE00887E14 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		045A6F3426C9567C00887E14 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				045A6F2026C8F3BE00887E14 /* Main.storyboard */,
+				045A6F2526C8F3C000887E14 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				045A6F1F26C8F3BE00887E14 /* ViewController.swift in Sources */,
+				045A6F2F26C90CB800887E14 /* CountingLabel.swift in Sources */,
 				045A6F1B26C8F3BE00887E14 /* AppDelegate.swift in Sources */,
+				045A6F3126C933D600887E14 /* StatsStackView.swift in Sources */,
 				045A6F1D26C8F3BE00887E14 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
